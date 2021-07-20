@@ -25,7 +25,7 @@ const isTriangle = function (number1, number2, number3) {
   if (isNaN(number1, number2, number3)) {
     return null;
 }
-  if ((number1+number2)>number3) {
+  if (number1 + number2 > number3 && number1 + number3 > number2 && number3 +number2 > number1) {
     return true;
   }
   return false;
